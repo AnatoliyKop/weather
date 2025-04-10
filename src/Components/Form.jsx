@@ -1,10 +1,12 @@
-import React from 'react';
+import {fetchWeather} from "../feauters/api/asyncWeatherAction.js";
+import {useDispatch} from "react-redux";
 
-const Form = ({getWeather}) => {
+const Form = () => {
+    const dispatch = useDispatch();
     const handleGetWeather = e => {
         e.preventDefault()
         const city = e.currentTarget.city.value.trim();
-        getWeather(city)
+        dispatch(fetchWeather(city));
 
     }
     return (
