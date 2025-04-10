@@ -1,9 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {fetchWeather} from "../api/asyncWeatherAction.ts";
+import {fetchWeather} from "../api/asyncWeatherAction";
+import {WeatherType} from "../../utils/typs";
 
 const weatherSlice = createSlice({
     name: "weather",
-    initialState: {},
+    initialState: {} as WeatherType,
     reducers: {},
     extraReducers: builder => {
         builder

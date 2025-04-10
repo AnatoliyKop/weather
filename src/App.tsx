@@ -1,6 +1,6 @@
 import './App.css'
-import Info from "./Components/Info.tsx";
-import Data from "./Components/Data.tsx";
+import Info from "./Components/Info";
+import Data from "./Components/Data";
 
 function App() {
 

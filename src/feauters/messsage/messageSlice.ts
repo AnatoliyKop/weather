@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {fetchWeather} from "../api/asyncWeatherAction.ts";
+import {fetchWeather} from "../api/asyncWeatherAction";
 
 const  messageSlice=createSlice({
     name: "message",
