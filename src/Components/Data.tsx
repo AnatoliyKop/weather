@@ -1,6 +1,5 @@
-import React from 'react';
-import Form from "./Form.jsx";
-import Weather from "./Weather.jsx";
+import Form from "./Form.js";
+import Weather from "./Weather.js";
 
 const Data = () => {
 
